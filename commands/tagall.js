@@ -2,8 +2,6 @@ const isAdmin = require('../lib/isAdmin'); // The isAdmin function is no longer 
 
 async function tagAllCommand(sock, chatId, senderId) {
     try {
-        // The isAdmin check has been removed, so all users can now use this command.
-        
         // Get group metadata
         const groupMetadata = await sock.groupMetadata(chatId);
         const participants = groupMetadata.participants;
@@ -13,10 +11,17 @@ async function tagAllCommand(sock, chatId, senderId) {
             return;
         }
 
-        // Create message with each member on a new line
-        let message = '🔊 *Group Members:*\n\n';
+        const groupName = groupMetadata.subject || "Unnamed Group";
+        const totalMembers = participants.length;
+
+        // ✨ Add announcement message here
+        const announcement = "🧭ᩨ─ *𝐀𐓣𐓣ⱺυ𐓣𝖼𝖾ꭑ𝖾𐓣𝗍:*\n𝐖α𝗄𝖾 𝐔ρ 𝐄𝗏𝖾𝗋𝗒ⱺ𐓣\n";
+
+        // Create message
+        let message = `━﹝̣ׄ🩰̸̶ּׄ͜﹞ *𝐆𝖼 𝐍αꭑ𝖾:* ${groupName}\n━﹝̣ׄ🌟̸̶ּׄ͜﹞ *𝐓ⱺ𝗍αᥣ 𝐌𝖾ꭑᑲ𝖾𝗋𝗌:* ${totalMembers}\n\n${announcement}\n🔊 *𝐓α𝗀𝗀𝖾ᑯ 𝐌𝖾ꭑᑲ𝖾𝗋𝗌:*\n\n`;
+
         participants.forEach(participant => {
-            message += `@${participant.id.split('@')[0]}\n`; // Add \n for new line
+            message += `@${participant.id.split('@')[0]}\n`;
         });
 
         // Send message with mentions
@@ -31,4 +36,4 @@ async function tagAllCommand(sock, chatId, senderId) {
     }
 }
 
-module.exports = tagAllCommand; // Export directly
+module.exports = tagAllCommand;
