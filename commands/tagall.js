@@ -21,7 +21,7 @@ async function tagAllCommand(sock, chatId, senderId) {
         let message = `━﹝̣ׄ🩰̸̶ּׄ͜﹞ *𝐆𝖼 𝐍αꭑ𝖾:* ${groupName}\n━﹝̣ׄ🌟̸̶ּׄ͜﹞ *𝐓ⱺ𝗍αᥣ 𝐌𝖾ꭑᑲ𝖾𝗋𝗌:* ${totalMembers}\n\n${announcement}\n🔊 *𝐓α𝗀𝗀𝖾ᑯ 𝐌𝖾ꭑᑲ𝖾𝗋𝗌:*\n\n`;
 
         participants.forEach(participant => {
-            message += `@${participant.id.split('@')[0]}\n`;
+            message += `━ ✦ ⃞🥮ᩧᩙᩪᩩ̶̷  ͟ ͟ ͟ ͟ @${participant.id.split('@')[0]}\n`;
         });
 
         // Send message with mentions
