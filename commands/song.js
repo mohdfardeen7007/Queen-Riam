@@ -38,7 +38,7 @@ async function songCommand(sock, chatId, message) {
         // Send video info before download
         await sock.sendMessage(chatId, {
             image: { url: video.thumbnail },
-            caption: `🎵 *${video.title}*\n\n𝘿𝙤𝙬𝙣𝙡𝙤𝙖𝙙𝙞𝙣𝙜... 🎶\n\n> ᴘᴏᴡᴇʀᴇᴅ ʙʏ ǫᴜᴇᴇɴ ʀɪᴀᴍ`
+            caption: ` ✦ ⃞🥮ᩧᩙᩪᩩ̶̷  ͟ ͟ ͟ ͟ *${video.title}*\n\n`
         }, { quoted: message });
 
         // React ⏳ while downloading
