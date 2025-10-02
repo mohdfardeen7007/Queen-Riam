@@ -16,8 +16,8 @@ async function songCommand(sock, chatId, message) {
             return;
         }
 
-        // React 🔎 while searching
-        await sock.sendMessage(chatId, { react: { text: "🔎", key: message.key }});
+        // React 🌟 while searching
+        await sock.sendMessage(chatId, { react: { text: "🌟", key: message.key }});
 
         // Search YouTube
         const { videos } = await yts(searchQuery);
@@ -38,7 +38,7 @@ async function songCommand(sock, chatId, message) {
         // Send video info before download
         await sock.sendMessage(chatId, {
             image: { url: video.thumbnail },
-            caption: ` ✦ ⃞🥮ᩧᩙᩪᩩ̶̷  ͟ ͟ ͟ ͟ *${video.title}*\n\n`
+            caption: ` *${video.title}*\n\n`
         }, { quoted: message });
 
         // React ⏳ while downloading
