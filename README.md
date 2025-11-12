@@ -33,7 +33,7 @@ Generate your Session ID to connect your WhatsApp account:
   <a href="https://riam-pair-site.onrender.com/pair" target="_blank">
     <img alt="Pair Site 1" src="https://img.shields.io/badge/Pair%20Site%201-233044?style=for-the-badge&logo=github&logoColor=white"/>
   </a>
-  <a href="https://riam-pair-806c062bbf06.herokuapp.com/pair" target="_blank">
+  <a href="https://pair-queenriam-blond.vercel.app/" target="_blank">
     <img alt="Pair Site 2" src="https://img.shields.io/badge/Pair%20Site%202-A10000?style=for-the-badge&logo=heroku&logoColor=white"/>
   </a>
 </p>
