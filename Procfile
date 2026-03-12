@@ -1,1 +1,1 @@
-web: cd '👑 QUEEN RIAM' && node index.js
+web: node index.js
