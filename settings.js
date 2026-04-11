@@ -15,7 +15,7 @@ const settings = {
   giphyApiKey: '',
   commandMode: 'public',
   description: 'This is a bot for managing group commands and automating tasks.',
-  version: '1.0.0',
+  version: '2.0.0',
 };
 
 module.exports = settings;
