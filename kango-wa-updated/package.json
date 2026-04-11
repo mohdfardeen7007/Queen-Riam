@@ -1,0 +1,28 @@
+{
+  "name": "kango-wa",
+  "version": "1.0.0",
+  "description": "A clean, production-ready WhatsApp toolkit for Baileys — interactive buttons, auto-reconnect, message queue, conversation flows, and more.",
+  "main": "src/index.js",
+  "license": "MIT",
+  "author": "Hector Manuel",
+  "keywords": [
+    "baileys",
+    "whatsapp",
+    "buttons",
+    "interactive",
+    "bot",
+    "kango-wa"
+  ],
+  "peerDependencies": {
+    "@whiskeysockets/baileys": ">=6.0.0",
+    "baileys": ">=7.0.0"
+  },
+  "peerDependenciesMeta": {
+    "@whiskeysockets/baileys": { "optional": true },
+    "baileys": { "optional": true },
+    "ioredis": { "optional": true },
+    "pg": { "optional": true }
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}
