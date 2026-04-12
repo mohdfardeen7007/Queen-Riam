@@ -19,7 +19,7 @@ COPY . .
 
 RUN mkdir -p tmp session data
 
-ENV PORT=7860
-EXPOSE 7860
+ENV PORT=1000
+EXPOSE 1000
 
 CMD ["node", "index.js"]
