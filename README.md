@@ -21,7 +21,7 @@
 
 ## About
 
-**QUEEN RIAM MD** is a modern WhatsApp multi-device bot built with **Node.js**, **Baileys**, and **Express**. Designed for simplicity, extensibility, and reliable automation for both group and personal chats.
+**QUEEN RIAM** is a modern WhatsApp multi-device bot built with **Node.js**, **Baileys**, and **Express**. Designed for simplicity, extensibility, and reliable automation for both group and personal chats.
 
 > Please use responsibly and for educational purposes only.
 
@@ -41,11 +41,11 @@ Generate your Session ID to connect your WhatsApp account:
 
 ## Deploy
 
-Deploy QUEEN RIAM MD with one click on any supported platform:
+Deploy QUEEN RIAM with one click on any supported platform:
 
 <p align="center">
   <a href="https://dashboard.heroku.com/new?template=https://github.com/Dev-Kango/Queen-Riam"><img src="https://img.shields.io/badge/Heroku-430098?style=for-the-badge&logo=heroku&logoColor=white" /></a>
-  <a href="https://railway.app/new"><img src="https://img.shields.io/badge/Railway-0B0D0E?style=for-the-badge&logo=railway&logoColor=white" /></a>
+  <a href="https://railway.app/new/template?template=https://github.com/Dev-Kango/Queen-Riam&envs=SESSION_ID&SESSION_IDDesc=Your+WhatsApp+Session+ID+(starts+with+RIAM~+or+Queen~)"><img src="https://img.shields.io/badge/Railway-0B0D0E?style=for-the-badge&logo=railway&logoColor=white" /></a>
   <a href="https://dashboard.render.com/web/new"><img src="https://img.shields.io/badge/Render-46E3B7?style=for-the-badge&logo=render&logoColor=white" /></a>
   <a href="https://app.koyeb.com/services/deploy?type=git&repository=Dev-Kango/Queen-Riam-"><img src="https://img.shields.io/badge/Koyeb-121212?style=for-the-badge&logo=koyeb&logoColor=white" /></a>
   <a href="https://dashboard.katabump.com/auth/login#14aeb2"><img src="https://img.shields.io/badge/KataBump-5B4B8A?style=for-the-badge&logo=rocket&logoColor=white" /></a>
