@@ -16,7 +16,7 @@ const CATEGORIES = { ai: { emoji: '🤖', title: 'AI', commands: ['.gpt', '.gemi
 
 function getHeader() { const currentTime = new Date().toLocaleString('en-US', { timeZone: settings.timezone, hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: false, }); const currentDate = new Date().toLocaleString('en-US', { timeZone: settings.timezone, day: '2-digit', month: '2-digit', year: 'numeric', }); const uptimeFormatted = formatTime(process.uptime()); const botMode = settings.commandMode === 'public' ? 'public' : 'private';
 
-return `*『 👑 𝚀𝚄𝙴𝙴𝙽 𝚁𝙸𝙰𝙼 』*\n*│ 👤 ᴏᴡɴᴇʀ     : ${settings.botOwner}*\n*│ 🌍 ᴍᴏᴅᴇ      : [ ${botMode} ]*\n*│ ⏰ ᴛɪᴍᴇ      : ${currentTime}*\n*│ 📅 ᴅᴀᴛᴇ      : ${currentDate}*\n*│ 🛠️ ᴘʀᴇғɪx    : [ . ]*\n*│ 🔄 ᴜᴘᴛɪᴍᴇ    : ${uptimeFormatted}*\n*│ 🌐 ᴛɪᴍᴇᴢᴏɴᴇ : ${settings.timezone}*\n*│ 🚀 ᴠᴇʀsɪᴏɴ   : ${settings.version}*\n*╰─────────⟢*`;
+return `*𝝖m︩︪፝֟b︩︪𐐲፝֟𖹭︩︪𑂘e︪︩፝֟ *\n*│ 👤 𝗢𑜊ne︪︩፝֟𐐲፝֟     : ${settings.botOwner}*\n*│ 🌍 𝝡𖹭︩︪ꛆe︪︩፝֟      : [ ${botMode} ]*\n*│ ⏰ 𝗧iꨪm︩︪፝֟e︪︩፝֟      : ${currentTime}*\n*│ 📅 𝗗ᨡte︪︩፝֟      : ${currentDate}*\n*│ 🛠️ 𝝦𐐲፝֟e︪︩፝֟fiꨪx    : [ . ]*\n*│ 🔄 𝗨ptiꨪm︩︪፝֟e︪︩፝֟    : ${uptimeFormatted}*\n*│ 🌐 𝗧iꨪm︩︪፝֟e︪︩፝֟z𖹭︩︪ne︪︩፝֟ : ${settings.timezone}*\n*│ 🚀 𝗩e︪︩፝֟𐐲፝֟𑂘iꨪ𖹭︩︪n   : ${settings.version}*\n*╰─────────⟢*`;
 
 }
 
@@ -60,7 +60,7 @@ if (subCategory && CATEGORIES[subCategory]) {
         try {
             const opts = {
                 text: catText,
-                footer: '© Queen Riam',
+                footer: '𝝖m︩︪፝֟b︩︪𐐲፝֟𖹭︩︪𑂘e︪︩፝֟',
                 buttons: [
                     { id: '.help', text: '🔙 Back to Menu' },
                 ],
@@ -88,7 +88,7 @@ if (isButtonModeOn() && sendButtons) {
 
         const opts = {
             text: menuText,
-            footer: '© Queen Riam',
+            footer: '𝝖m︩︪፝֟b︩︪𐐲፝֟𖹭︩︪𑂘e︪︩፝֟',
             buttons,
             quoted: getFakeVcard(),
         };
